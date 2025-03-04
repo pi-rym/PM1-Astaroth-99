@@ -1,0 +1,68 @@
+:root {
+    --primary-color: rgb(37, 29, 93);
+    --black: rgb(15, 15, 15);
+    --font-size-medium: 16px;
+    --shadow: 3px 3px 5px var(var(--black))
+}
+header {
+    display: flex;
+    background-color: var(--primary-color);
+    color: white;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+    height: 70px;
+    align-items: center;
+}
+
+main {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+}
+.nav-links li{
+    margin: 10px;
+}
+
+.tech-section{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.card-section {
+    display: flex;
+    flex-direction: row;
+}
+.tech-section h3{
+font-size: var(--font-size-medium);
+}
+.tech-section img{
+    width: 80px;
+    height: 80px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.card img{
+    filter: drop-shadow(var(--shadow));
+}
+input, textarea{
+  border: 1px solid var(--black);
+  padding: 5px;
+}
+form button {
+    background: slategray;
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+}

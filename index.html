@@ -3,9 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">   
+    <link rel="stylesheet" href="./styles/styles.css">  
     <title>Document</title>
 </head>
 <body>
-    <h1>Proyecto M1</h1>
+   <header>
+         <div>   
+             <h3>Proyecto M1</h3>
+             <span>FullStack Dev</span>
+         </div>
+         <nav>        
+           <ul class="nav-links">
+             <li>Home</li>
+             <li>About</li>
+             <li>Contact</li>
+           </ul>
+         </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Welcome to my Portfolio</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt sed voluptates repudiandae beatae ullam voluptate, repellat quaerat maiores quasi obcaecati debitis, inventore dolorum illo maxime laborum, explicabo perspiciatis mollitia rerum?</p>
+        </section>
+        <section class="tech-section">
+            <h2>Mis tecnologias favoritas</h2>
+            <div class="card-section">
+                <div class="card">
+            <h3>CSS</h3>
+            <img src="https://th.bing.com/th/id/OIP.8kNko0ip-RZ125_-PCSAiAHaIZ?rs=1&pid=ImgDetMain" 
+                 alt="">
+                </div>
+                <div class="card">
+                <h3>HTML</h3>
+            <img src="https://th.bing.com/th/id/OIP.rJlGRhc-aLapZKLwPzSfQAHaFm?rs=1&pid=ImgDetMain" 
+                 alt="">
+                </div> 
+                <div class="card">
+                <h3>JS</h3>
+            <img src="https://th.bing.com/th/id/OIP.DEt_TbohHcb6KhpldP6vMwHaEK?rs=1&pid=ImgDetMain" 
+                 alt="">
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Mis actividades favoritas</h2>
+            <form>
+               <div>
+                <label for="title">Titulo</label>
+                    <input id="title" type="text" />
+               </div>
+                <div>
+                <label for="descripcion">Descripción</label>
+                <textarea name="" id="descripcion"></textarea>
+                 </div>
+                 <div>
+                <label for="urlimg">URL de imagen:</label>
+                <input id="urlimg" type="text">
+               </div>
+                <button>Crear Actividad</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
