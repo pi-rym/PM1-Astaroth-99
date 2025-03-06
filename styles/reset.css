@@ -1,47 +1,37 @@
-/* Reset CSS Moderno */
-
-/* Box sizing border-box para todos los elementos */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
   
-  /* Heredar fuentes para formularios */
   input, button, textarea, select {
     font: inherit;
   }
   
-  /* Eliminar decoraciones de listas */
   ul, ol {
     list-style: none;
   }
   
-  /* Eliminar subrayado de enlaces y color por defecto */
   a {
     text-decoration: none;
     color: inherit;
   }
   
-  /* Asegurar que el body ocupe toda la altura */
   html, body {
     height: 100%;
   }
   
-  /* Resetear imágenes y videos para evitar overflow */
   img, video {
     max-width: 100%;
     height: auto;
     display: block;
   }
   
-  /* Eliminar bordes en elementos interactivos en algunos navegadores */
   button, input, textarea {
     border: none;
     outline: none;
   }
   
-  /* Asegurar tipografía suave y coherente */
   body {
     font-family: sans-serif;
     line-height: 1.5;
@@ -50,7 +40,6 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
-  /* Evitar que los encabezados tengan márgenes excesivos */
   h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
   }

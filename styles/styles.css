@@ -15,11 +15,10 @@ header {
 }
 
 main {
-    max-width: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    justify-content: center;
 }
 
 .nav-links {
@@ -30,6 +29,22 @@ main {
     margin: 10px;
 }
 
+.presentacion {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   width: 100%;
+   background-color: slategray;
+   color: white;
+   margin: 30px;
+   height: 400px; 
+}
+.presentacion h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px;
+}
 .tech-section{
 display: flex;
 flex-direction: column;
@@ -39,30 +54,69 @@ justify-content: center;
     display: flex;
     flex-direction: row;
 }
+.tech-section {
+    background-color: silver;
+    padding: 20px;
+    border-radius: 10px;
+}
+.tech-section h2{
+    color: #333;
+    text-align: center;
+}
 .tech-section h3{
 font-size: var(--font-size-medium);
 }
-.tech-section img{
-    width: 80px;
-    height: 80px;
-}
-
-.card{
+.tech-section .card-section {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+.tech-section .card{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: #333;
+    text-align: center;
     margin: 10px;
 }
-.card img{
+.tech-section .card img {
+    width: 200px;
+    height: auto;
     filter: drop-shadow(var(--shadow));
 }
-input, textarea{
-  border: 1px solid var(--black);
-  padding: 5px;
+.activities-section {
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    min-width: 800px;
 }
-form button {
+.activities-section form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.activities-section div {
+    display: flex;
+    flex-direction: column;
+}
+.activities-section input,
+.activities-section textarea {
+    border: 1px solid var(--black);
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.activities-section form button {
     background: slategray;
     border-radius: 10px;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 5px;
     cursor: pointer;
+    transition: 0.2s;
+    max-width: 200px;
+}
+.activities-section form button:hover {
+    box-shadow: var(--shadow);
 }
