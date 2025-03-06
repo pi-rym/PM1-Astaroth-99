@@ -5,67 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/reset.css">   
     <link rel="stylesheet" href="./styles/styles.css">  
-    <title>Document</title>
+    <title>Henry Proyect</title>
 </head>
 <body>
-   <header>
-         <div>   
-             <h3>Proyecto M1</h3>
-             <span>FullStack Dev</span>
-         </div>
-         <nav>        
+    <header>
+        <nav>
            <ul class="nav-links">
-             <li>Home</li>
-             <li>About</li>
-             <li>Contact</li>
+              <li><h1>Balbuena Facundo</h1></li>
+              <li><span>Mi Página Web</span></li>
            </ul>
-         </nav>
-    </header>
+        </nav>
+     </header>
     <main>
         <section class="presentacion">
             <h1>Welcome to my Portfolio</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt sed voluptates repudiandae beatae ullam voluptate, repellat quaerat maiores quasi obcaecati debitis, inventore dolorum illo maxime laborum, explicabo perspiciatis mollitia rerum?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
         </section>
+
         <section class="tech-section">
-            <h2>Mis tecnologias favoritas</h2>
+            <h2>Mis tecnologías favoritas</h2>
             <div class="card-section">
                 <div class="card">
-            <h3>CSS</h3>
-            <img src="https://th.bing.com/th/id/OIP.8kNko0ip-RZ125_-PCSAiAHaIZ?rs=1&pid=ImgDetMain" 
-                 alt="">
+                    <h3>CSS</h3>
+                    <img src="https://th.bing.com/th/id/OIP.8kNko0ip-RZ125_-PCSAiAHaIZ?rs=1&pid=ImgDetMain" alt="CSS">
                 </div>
                 <div class="card">
-                <h3>HTML</h3>
-            <img src="https://th.bing.com/th/id/OIP.rJlGRhc-aLapZKLwPzSfQAHaFm?rs=1&pid=ImgDetMain" 
-                 alt="">
+                    <h3>HTML</h3>
+                    <img src="https://th.bing.com/th/id/OIP.rJlGRhc-aLapZKLwPzSfQAHaFm?rs=1&pid=ImgDetMain" alt="HTML">
                 </div> 
                 <div class="card">
-                <h3>JS</h3>
-            <img src="https://th.bing.com/th/id/OIP.DEt_TbohHcb6KhpldP6vMwHaEK?rs=1&pid=ImgDetMain" 
-                 alt="">
+                    <h3>JS</h3>
+                    <img src="https://th.bing.com/th/id/OIP.DEt_TbohHcb6KhpldP6vMwHaEK?rs=1&pid=ImgDetMain" alt="JavaScript">
                 </div>
             </div>
         </section>
+
         <section class="activities-section">
             <h2>Mis actividades favoritas</h2>
-            <form>
-               <div>
-                <label for="title">Titulo</label>
-                    <input id="title" type="text" />
-               </div>
+            <form id="activity-form">
                 <div>
-                <label for="descripcion">Descripción</label>
-                <textarea name="" id="descripcion"></textarea>
-                 </div> 
-                 <div>
-                <label for="urlimg">URL de imagen:</label>
-                <input id="urlimg" type="text">
-               </div>
-                <button>Crear Actividad</button>
+                    <label for="title">Nombre de la actividad</label>
+                    <input id="title" type="text" placeholder="Nombre de la actividad" />
+                </div>
+                <div>
+                    <label for="descripcion">Descripción de la actividad</label>
+                    <input id="descripcion" placeholder="Descripción de la actividad"></input>
+                </div> 
+                <div>
+                    <label for="urlimg">Link de imagen</label>
+                    <input id="urlimg" type="text" placeholder="Link de imagen">
+                </div>
+                <button type="submit">Agregar Actividad</button>
             </form>
-            <section>
-                <h2>Mis actividades</h2>
-            </section>
+            
+
+        <section>
+            <h2>Mis actividades</h2>
+            <div id="activities"></div>
         </section>
     </main>
     <script src="./scripts/index.js"></script>
